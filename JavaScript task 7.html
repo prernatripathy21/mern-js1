@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://127.0.0.1:5501/jstask7.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
+      <title>JavaScript task 7</title>        
+      <script src="./JavaScript task 7_files/bootstrap.bundle.min.js.download"></script>
+   </head>  
+   <body>     
+    <script type="text/javascript">  
+        <!--  
+           var imgObj = null;  
+           var animate ;   
+           function init() {  
+              imgObj = document.getElementById('myImg');  
+              imgObj.style.position= 'relative';   
+              imgObj.style.left = '0px';   
+           }  
+           function moveRight() {  
+              imgObj.style.left = parseInt(imgObj.style.left) + 5 + 'px';  
+              animate = setTimeout(moveRight,22);   
+           }  
+           function stop() {  
+              clearTimeout(animate);  
+              imgObj.style.left = '0px';   
+           }  
+           window.onload = init;  
+        //-->  
+     </script>   
+      <form>  
+        <center>
+         <img id="myImg" src="./JavaScript task 7_files/R.jpeg" style="position: relative; left: 0px;">  <br><br>
+         <h2 style="color:rgb(28, 28, 178)">Click the following buttons to handle the automated animation</h2>
+         <input type="button" value="Start" onclick="moveRight();">  
+         <input type="button" value="Stop" onclick="stop();">  </center>
+      </form>        
+   <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+  
+  </body></html>

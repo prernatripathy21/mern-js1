@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://127.0.0.1:5501/bstask6.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap task 6</title>
+    <link href="./bootstrap task 6_files/bootstrap.min.css" rel="stylesheet">
+  
+</head>
+<body>
+  <script src="./bootstrap task 6_files/bootstrap.bundle.min.js.download"></script>
+    <div class="container mt-3">
+          
+        <form action="http://127.0.0.1:5501/action_page.php" class="was-validated">
+      
+          <div class="mb-3 mt-3">
+          
+            <label for="uname" class="form-label">Name</label>
+            <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required="">
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Name is required.</div>
+            
+          </div>
+          <div class="mb-3">
+           
+            <label for="em" class="form-label">Email</label>
+            <input type="email" class="form-control" id="em" placeholder="Enter email" name="em" required="">
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Email is required.</div>
+          
+          </div>
+          <div class="mb-3">
+           
+            <label for="pwd" class="form-label">Password</label>
+            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" required="">
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Email is required.</div>
+          </div>
+          <div>
+            <label class="form-label me-5">Hobbies</label>
+               <select class="form-select">
+               <option></option>
+                <option>Team 1</option>
+                <option>Team 2</option>
+                <option>Team 3</option>
+                <option>Team 4</option>
+              </select>
+            
+            </div>
+            <br>
+          
+      
+        <button type="submit" class="btn btn-primary" style="background-color: crimson; color: white; padding: 0% auto; width: 100%;">Submit</button>
+        </form>
+      </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>

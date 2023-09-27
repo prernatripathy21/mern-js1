@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://127.0.0.1:5501/bstask5.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap task 5</title>
+    <link href="./bootstrap task 5_files/all.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="./bootstrap task 5_files/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+   
+    <style>
+      
+      body{
+        margin: 0% auto;
+      padding: 25px;
+      text-align: justify;
+      align-items: center;
+    }
+    .icon{
+      padding: 10px;
+  background: rgb(224, 214, 214);
+  color: rgb(19, 18, 18);
+  min-width: 50px;
+  text-align: center;
+    }
+    .input-container, .select-container{
+      display: -ms-flexbox; /* IE10 */
+      display: flex;
+      width: 100%;
+      margin-bottom: 15px;
+      
+    }
+    td{
+      padding: 5px;
+      margin: 10px;
+    }
+    </style>
+    
+</head>
+<body>
+  
+  <script src="./bootstrap task 5_files/bootstrap.bundle.min.js.download"></script>
+<center>
+<div class="container">
+
+    <form method="post" id="contact_form" action="http://127.0.0.1:5501/action_page.php" class="was-validated"></form>
+<fieldset>
+
+
+  
+<!-- Text input-->
+</fieldset></div><div class="form-group">
+ 
+  </div><div class="form-group">
+  </div><div class="form-group"></div><div class="form-group"></div><div class="form-group"></div><div class="form-group">
+  </div><div class="form-group"> </div><div class="form-group"></div><div class="form-group"></div><table style="background-color:rgb(234, 234, 226); " width="500px">
+  <tbody><tr>
+<td><label class="col-me-4 control-label">First Name</label></td>  
+  <td><div class="col-me-4 input-container">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="fa fa-user icon"></i></span>
+  <input name="first_name" placeholder="First Name" class="form-control" type="text" required="">
+    </div>
+  </div></td>
+
+
+</tr>
+
+<!-- Text input-->
+
+<tr><td>
+  <label class="col-me-4 control-label">Last Name</label> </td>
+   <td> <div class="col-me-4 input-container">
+    <div class="input-group">
+  <span class="input-group-addon"><i class="fa fa-user icon"></i></span>
+  <input name="last_name" placeholder="Last Name" class="form-control" type="text" required="">
+    </div>
+  </div></td>
+</tr>
+
+
+<!-- Text input-->
+       <tr>
+  <td><label class="col-me-4 control-label">E-Mail</label>  </td>
+    <td><div class="col-me-4 input-container">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="fa fa-envelope icon"></i></span>
+  <input name="email" placeholder="E-Mail Address" class="form-control" type="email" required="">
+    </div>
+  </div></td>
+</tr>
+
+
+<!---phone-->
+<tr>
+  <td><label class="col-me-4 control-label">Phone #</label></td>
+    <td><div class="col-me-4 input-container">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="fa fa-phone icon"></i></span>
+  <input name="contact_no" placeholder="(845)555-1212" class="form-control" type="text" required="">
+    </div>
+  </div></td></tr>
+
+
+
+   
+<!-- Text input-->
+<tr>
+  <td><label class="col-me-4 control-label">Address</label> </td> 
+   <td><div class="col-me-4 input-container">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="fa fa-home icon"></i></span>
+  <input name="website" placeholder="Address" class="form-control" type="text" required="">
+    </div>
+  </div></td></tr>
+
+
+<!-- Text input-->
+<tr>
+  <td><label class="col-me-4 control-label">City</label>  </td>
+   <td><div class="col-me-4 input-container">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="fa fa-home icon"></i></span>
+  <input name="website" placeholder="city" class="form-control" type="text" required="">
+    </div>
+  </div></td></tr>
+
+
+<!-- Select Basic -->
+   
+<tr>
+  <td><label class="col-me-4 control-label">State</label></td>
+    <td><div class="col-me-4 select-container">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="fa fa-list icon"></i></span>
+    <select name="contact_reason" class="form-control selectpicker">
+      <option value=" ">Please select your state</option>
+      <option>west bengal</option>
+      <option>jharkhand</option>
+      <option>tamil nadu</option>
+      <option>andhra pradesh</option>
+      <option>orissa</option>
+      <option>karnataka</option>
+    </select>
+  </div>
+</div></td></tr>
+
+  
+<!-- radio checks -->
+ <tr>
+                        <td><label class="col-me-4 control-label">Do you have hosting?</label></td>
+                        <td><div class="col-me-4">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="sponsorship" value="yes"> Yes
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="hosting" value="no"> No
+                                </label>
+                            </div>
+                        </div></td></tr>
+                    
+
+<!-- Text area -->
+  
+<tr>
+  <td><label class="col-me-4 control-label">Project Description</label></td>
+    <td><div class="col-me-4 input-container">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="fa fa-pencil icon"></i></span>
+        	<textarea class="form-control" name="comment" placeholder="Project Description" required=""></textarea>
+  </div>
+  </div></td></tr>
+
+
+
+
+<!-- Button --><tr rowspan="2">
+<td colspan="2" style="text-align: center;"><div class="form-group">
+  <label class="col-me-4 control-label"></label>
+  <div class="col-me-4">
+    <button type="submit" class="btn btn-warning" style="padding: 10px 20px; font-size: large;" target="_blank">Send <span><i class="fa-solid fa-paper-plane"></i></span></button>
+  </div>
+</div></td></tr>
+
+
+
+
+  <!-- /.container -->
+  </tbody></table>
+</center>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

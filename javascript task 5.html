@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://127.0.0.1:5501/jstask5.html? -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript task 5</title>
+    <link href="./javascript task 5_files/bootstrap.min.css" rel="stylesheet">
+    <script src="./javascript task 5_files/bootstrap.bundle.min.js.download"></script>
+    <style>
+    input[type=text ], [type=email]{
+        width: 100%;
+        padding: 5px 20px;
+        margin: 5px 0px;
+        box-sizing: border-box;
+       
+        border-radius: 1px;
+      }
+      textarea{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 5px 0;
+        box-sizing: border-box;
+        border: 3px solid red;
+        border-radius: 4px;
+      }
+      .invalid-feedback{
+        border: 3px solid red;
+        color:red;
+
+      }
+      </style>
+</head>
+<body>
+    <center>
+      
+        <form style="max-width: 55%" class="was-validated" novalidate="">
+          <div>
+            </div><div class="valid-feedback">valid</div><div class="invalid-feedback">This field is required.</div><div>
+            </div><div>
+            </div><div>
+            </div><div>
+            </div><table>
+            <tbody><tr>
+              <td><label for="validname" class="form-label me-5">Name: </label></td>
+              <td>
+                <input class="form-control" type="text" id="validname" required=""></td>
+                
+            
+              
+            </tr>
+        
+
+        <tr>
+              <td><label for="validemail" class="form-label me-5">Email: </label></td>
+              <td>
+                <input class="form-control" type="email" id="validemail" required=""></td>
+                <td><div class="valid-feedback">valid</div>
+            <div class="invalid-feedback" style="color:red">A valid email address is required.</div>
+              </td>
+            </tr>
+        
+
+        <tr>
+              <td><label for="validwebsite" class="form-label me-5">Subject: </label></td>
+              <td>
+                <input class="form-control" type="text" id="validwebsite" required=""></td>
+                <td><div class="valid-feedback"></div>
+            <div class="invalid-feedback" style="color:red">A Valid URL is required.</div>
+              </td>
+            </tr>
+        
+
+        <tr>
+              <td><label class="form-label me-5">Website: </label></td>
+              <td>
+                <textarea class="form-control" type="text" required=""></textarea></td>
+                <td><div class="valid-feedback"></div>
+            <div class="invalid-feedback" style="color:red">The field is required.</div>
+              </td>
+            </tr>
+
+        
+
+        <tr><td rowspan="2"> </td>
+            </tr><tr>
+              <td colspan="2" class="text-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </td>
+            </tr>
+        
+          </tbody></table>
+        </form>
+      </center>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
